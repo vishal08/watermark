@@ -24,7 +24,7 @@ public class Watermark {
         try {
             PdfReader Read_PDF_To_Watermark = new PdfReader("New_PDF_With_Watermark_Image.pdf");
             int number_of_pages = Read_PDF_To_Watermark.getNumberOfPages();
-            PdfStamper stamp = new PdfStamper(Read_PDF_To_Watermark, new FileOutputStream("D:/New_PDF_With_Watermark_Image.pdf"));
+            PdfStamper stamp = new PdfStamper(Read_PDF_To_Watermark, new FileOutputStream("New_PDF_With_Watermark_Image.pdf"));
             int i = 0;
             Image watermark_image = Image.getInstance("D:/watermark.jpg");
             watermark_image.setAbsolutePosition(200, 400);
