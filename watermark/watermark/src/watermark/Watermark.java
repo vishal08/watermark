@@ -22,7 +22,7 @@ public class Watermark {
     public static void main(String[] args) {
         // TODO code application logic here
         try {
-            PdfReader Read_PDF_To_Watermark = new PdfReader("D:/Sample.pdf");
+            PdfReader Read_PDF_To_Watermark = new PdfReader("New_PDF_With_Watermark_Image.pdf");
             int number_of_pages = Read_PDF_To_Watermark.getNumberOfPages();
             PdfStamper stamp = new PdfStamper(Read_PDF_To_Watermark, new FileOutputStream("D:/New_PDF_With_Watermark_Image.pdf"));
             int i = 0;
